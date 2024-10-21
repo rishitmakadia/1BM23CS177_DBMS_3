@@ -1,6 +1,6 @@
 show databases;
-create database IF NOT exists DBMS_3;
-use DBMS_3;
+create database IF NOT exists Demo;
+use Demo;
 
 CREATE TABLE STUDENT(stdid INT(5), stdname varchar(20), dob date, doj date, fee int(5), gender char);
 select * from student;
