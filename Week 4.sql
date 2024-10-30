@@ -13,9 +13,9 @@ create table EMPLOYEE(EmpNo int(5), Ename varchar(25), MGR_No int(10),
 HireDate varchar(10), Salary int(10), DeptNo int(5), 
 PRIMARY KEY(EmpNo), 
 FOREIGN KEY(DeptNo) REFERENCES DEPT(DeptNo));
-insert EMPLOYEE values (121, "Ria", 51, "21/10/2018", 30000, 4),
-(122, "Kia", 57, "21/11/2020", 20000, 4),(123, "Jiya", 77, "1/10/2008", 70000, 4),
-(124, "Lia", 63, "21/1/2019", 35000, 4),(125, "Piya", 71, "27/5/2017", 40000, 4);
+insert EMPLOYEE values (121, "Ria", 122, "21/10/2018", 30000, 4),
+(122, "Kia", 121, "21/11/2020", 20000, 4),(123, "Jiya", 121, "1/10/2008", 70000, 4),
+(124, "Lia", 122, "21/1/2019", 35000, 4),(125, "Piya", 121, "27/5/2017", 40000, 4);
 
 
 create table PROJECT(Ploc varchar(25), Pname varchar(25), Pno int(5), 
@@ -39,19 +39,34 @@ insert INCENTIVES values (123, "12/3/2021", 20000),
 (122, "21/3/2022", NULL),(124, "18/7/2023", 10000),
 (125, "12/12/2022", 17000),(121, "11/5/2023", NULL);
 
+-- Retrieve the employee numbers of all employees who work on project located in Bengaluru, Hyderabad, or Mysuru?
 -- select e.EmpNo, p.Ploc from PROJECT p, EMPLOYEE e where p.Ploc = "BLR" or p.Ploc = "HYD";
 select distinct a.EmpNo, p.Ploc
 from AssignedTo a
 join PROJECT p on a.Pno = p.Pno
 where p.Ploc in ('BLR', 'HYD', 'MYS');
 
+-- Get Employee ID’s of those employees who didn’t receive incentives?
 -- select i.IncAmount, e.Ename, e.EmpNo from Incentives i, Employee e where i.IncAmount =0;
-SELECT e.EmpNo, i.IncAmount
+SELECT e.EmpNo, i.IncAmount, e.Ename
 FROM EMPLOYEE e
 LEFT JOIN INCENTIVES i ON e.EmpNo = i.EmpNo
 WHERE i.IncAmount IS NULL;
 
-select e.EmpNo, e.Ename from PROJECT p, EMPLOYEE e where e.Dloc = p.Ploc
+-- Write a SQL query to find the employees name, number, dept, job_role, department location and project location who are working for a project location same as his/her department location?
+
+-- List the name of the managers with the maximum employees?
+SELECT Ename FROM EMPLOYEE WHERE EmpNo = ( SELECT MGR_No FROM EMPLOYEE GROUP BY MGR_No ORDER BY COUNT(*) DESC LIMIT 1);
+
+-- Display those managers name whose salary is more than average salary of his employee?
+SELECT E1.Ename AS ManagerName FROM EMPLOYEE E1 WHERE E1.Salary > ( SELECT AVG(E2.Salary) FROM EMPLOYEE E2 WHERE E2.MGR_No = E1.EmpNo);
+
+-- Find the name of the second top level managers of each department?
+
+-- Find the employee details who got second maximum incentive in January 2019? 
+
+-- Display those employees who are working in the same department where his manager is working?
+SELECT E1.Ename AS EmployeeName FROM EMPLOYEE E1 JOIN EMPLOYEE E2 ON E1.MGR_No = E2.EmpNo WHERE E1.DeptNo = E2.DeptNo;
 
 
 

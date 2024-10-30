@@ -32,7 +32,9 @@ insert into PARTICIPATED values ('A01', 'KA052250', 11, 10000),
 ('A02', 'KA031181', 12, 50000), ('A03', 'KA095477', 13, 25000),
 ('A04', 'KA053408', 14, 3000),('A05', 'KA041702', 15, 5000);
 
+-- Display Accident date and location?
 select acc_date,location from ACCIDENT;
+-- Display driver id who did accident with damage amount greater than or equal to Rs.25000?
 select driver_id, damage_amt from PARTICIPATED where damage_amt>=25000;
 
 
