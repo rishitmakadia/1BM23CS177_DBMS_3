@@ -23,12 +23,22 @@ insert Catalog values (10001, 20001, 10),(10001, 20002, 10),
 
 -- Find the pnames of parts for which there is some supplier?
 select p.pname from Parts p where p.Pid IN (select c.pid from Catalog c);
+select distinct p.pname from Parts p, Catalog c where p.Pid = c.Pid;
 
 -- Find the snames of suppliers who supply every part?
+select s.sname from Suppliers s JOIN Catalog c ON s.sid = c.sid GROUP BY s.sname
+HAVING COUNT(DISTINCT c.pid) = (SELECT COUNT(*) FROM Parts);
 
 -- Find the snames of suppliers who supply every red part?  (Incomplete)
-select s.Sname from Suppliers s, Catalog j where s.Sid=j.Pid IN (select p.Pid from Parts p, Catalog c where p.Color ='Red' and c.Pid=p.Pid);
+select s.sname from Suppliers s JOIN Catalog c ON s.sid = c.sid JOIN Parts p ON c.pid = p.pid
+WHERE p.color = 'Red' GROUP BY s.sid, s.sname HAVING COUNT(DISTINCT p.pid) = (select COUNT(*) from Parts WHERE color = 'Red');
 
 -- Find the pnames of parts supplied by Acme Widget Suppliers and by no one else?
+
+
 -- Find the sids of suppliers who charge more for some part than the average cost of that part (averaged over all the suppliers who supply that part)?
+select distinct c.sid from Catalog c where c.cost > (select AVG(c1.cost) from Catalog c1 where c1.pid = c.pid);
+
 -- For each part, find the sname of the supplier who charges the most for that part?
+select p.pname, s.sname from Parts p JOIN Catalog c ON p.pid = c.pid JOIN Suppliers s ON s.sid = c.sid 
+WHERE c.Cost = (select MAX(c1.Cost) from Catalog c1 WHERE c1.pid = p.pid);
