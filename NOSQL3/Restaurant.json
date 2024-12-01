@@ -1,0 +1,340 @@
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae469"
+    },
+    "address": {
+        "building": "12A",
+        "coord": [
+            77.5946,
+            12.9716
+        ],
+        "street": "Church Street",
+        "zipcode": "560001"
+    },
+    "borough": "Bangalore",
+    "cuisine": "North Indian",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-09-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 3
+        },
+        {
+            "date": {
+                "$date": "2020-09-04T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 5
+        }
+    ],
+    "name": "Royal Punjabi Dhaba",
+    "restaurant_id": "500001"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46a"
+    },
+    "address": {
+        "building": "45",
+        "coord": [
+            72.8777,
+            19.076
+        ],
+        "street": "Marine Drive",
+        "zipcode": "400002"
+    },
+    "borough": "Mumbai",
+    "cuisine": "Maharashtrian",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-09-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 4
+        },
+        {
+            "date": {
+                "$date": "2020-10-01T00:00:00Z"
+            },
+            "grade": "B",
+            "score": 7
+        }
+    ],
+    "name": "Konkan Coastal Kitchen",
+    "restaurant_id": "500002"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46b"
+    },
+    "address": {
+        "building": "78",
+        "coord": [
+            77.1025,
+            28.7041
+        ],
+        "street": "Chandni Chowk",
+        "zipcode": "110006"
+    },
+    "borough": "Delhi",
+    "cuisine": "Mughlai",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-06-01T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 2
+        },
+        {
+            "date": {
+                "$date": "2020-07-28T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 4
+        }
+    ],
+    "name": "Zam Zam Biryani",
+    "restaurant_id": "500003"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46c"
+    },
+    "address": {
+        "building": "17",
+        "coord": [
+            88.3639,
+            22.5726
+        ],
+        "street": "Park Street",
+        "zipcode": "700016"
+    },
+    "borough": "Kolkata",
+    "cuisine": "Bengali",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-05-01T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 3
+        },
+        {
+            "date": {
+                "$date": "2020-05-09T00:00:00Z"
+            },
+            "grade": "B",
+            "score": 6
+        }
+    ],
+    "name": "Bong Flavors",
+    "restaurant_id": "500004"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46d"
+    },
+    "address": {
+        "building": "9",
+        "coord": [
+            78.4867,
+            17.385
+        ],
+        "street": "Banjara Hills",
+        "zipcode": "500034"
+    },
+    "borough": "Hyderabad",
+    "cuisine": "Hyderabadi",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-11-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 5
+        },
+        {
+            "date": {
+                "$date": "2020-12-31T00:00:00Z"
+            },
+            "grade": "B",
+            "score": 8
+        }
+    ],
+    "name": "Nawab's Biryani House",
+    "restaurant_id": "500005"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46e"
+    },
+    "address": {
+        "building": "34",
+        "coord": [
+            76.7794,
+            30.7333
+        ],
+        "street": "Sector 17",
+        "zipcode": "160017"
+    },
+    "borough": "Chandigarh",
+    "cuisine": "Punjabi",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-09-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 4
+        },
+        {
+            "date": {
+                "$date": "2020-09-04T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 5
+        }
+    ],
+    "name": "Amritsari Tadka",
+    "restaurant_id": "500006"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae46f"
+    },
+    "address": {
+        "building": "56",
+        "coord": [
+            73.8567,
+            18.5204
+        ],
+        "street": "Fergusson College Road",
+        "zipcode": "411004"
+    },
+    "borough": "Pune",
+    "cuisine": "South Indian",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-09-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 3
+        },
+        {
+            "date": {
+                "$date": "2020-09-04T00:00:00Z"
+            },
+            "grade": "B",
+            "score": 6
+        }
+    ],
+    "name": "Sree Saravana Bhavan",
+    "restaurant_id": "500007"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae470"
+    },
+    "address": {
+        "building": "104",
+        "coord": [
+            76.9366,
+            8.5241
+        ],
+        "street": "MG Road",
+        "zipcode": "695001"
+    },
+    "borough": "Thiruvananthapuram",
+    "cuisine": "Kerala",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-12-03T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 2
+        },
+        {
+            "date": {
+                "$date": "2020-10-01T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 4
+        }
+    ],
+    "name": "Malabar Magic",
+    "restaurant_id": "500008"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae471"
+    },
+    "address": {
+        "building": "88",
+        "coord": [
+            72.5714,
+            23.0225
+        ],
+        "street": "C.G. Road",
+        "zipcode": "380009"
+    },
+    "borough": "Ahmedabad",
+    "cuisine": "Gujarati",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-07-01T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 1
+        },
+        {
+            "date": {
+                "$date": "2020-08-07T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 3
+        }
+    ],
+    "name": "Kathiawadi Junction",
+    "restaurant_id": "500009"
+}
+{
+    "_id": {
+        "$oid": "674c9a1645c47af2ccfae472"
+    },
+    "address": {
+        "building": "21",
+        "coord": [
+            74.8792,
+            31.634
+        ],
+        "street": "Golden Temple Road",
+        "zipcode": "143001"
+    },
+    "borough": "Amritsar",
+    "cuisine": "Punjabi",
+    "grades": [
+        {
+            "date": {
+                "$date": "2021-09-02T00:00:00Z"
+            },
+            "grade": "A",
+            "score": 2
+        },
+        {
+            "date": {
+                "$date": "2020-09-04T00:00:00Z"
+            },
+            "grade": "B",
+            "score": 5
+        }
+    ],
+    "name": "Golden Tandoori",
+    "restaurant_id": "500010"
+}
