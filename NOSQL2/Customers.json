@@ -1,0 +1,32 @@
+[
+  {
+    "_id": { "$oid": "674d9d56f63dc7b385ea56ff" },
+    "Cust_id": "C001",
+    "Acc_Bal": 2500,
+    "Acc_Type": "Savings"
+  },
+  {
+    "_id": { "$oid": "674d9d56f63dc7b385ea5700" },
+    "Cust_id": "C002",
+    "Acc_Bal": 12000,
+    "Acc_Type": "Current"
+  },
+  {
+    "_id": { "$oid": "674d9d56f63dc7b385ea5701" },
+    "Cust_id": "C003",
+    "Acc_Bal": 8000,
+    "Acc_Type": "Savings"
+  },
+  {
+    "_id": { "$oid": "674d9d56f63dc7b385ea5702" },
+    "Cust_id": "C004",
+    "Acc_Bal": 500,
+    "Acc_Type": "Current"
+  },
+  {
+    "_id": { "$oid": "674d9d56f63dc7b385ea5703" },
+    "Cust_id": "C005",
+    "Acc_Bal": 3000,
+    "Acc_Type": "Savings"
+  }
+]
