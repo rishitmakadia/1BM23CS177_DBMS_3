@@ -68,6 +68,3 @@ AS RankedManagers JOIN DEPT D ON RankedManagers.DeptNo = D.DeptNo WHERE RankedMa
 
 -- Display those employees who are working in the same department where his manager is working?
 SELECT E1.Ename AS EmployeeName FROM EMPLOYEE E1 JOIN EMPLOYEE E2 ON E1.MGR_No = E2.EmpNo WHERE E1.DeptNo = E2.DeptNo;
-
-
-

@@ -72,7 +72,7 @@ select * FROM participated ORDER BY damage_amt desc;
 -- Find average damage_amount
 select avg(damage_amt) from participated;
 
--- Delete the tuple whose damage_amount is below average amount  damage_amount
+-- Delete the tuple whose damage_amount is below average amount damage_amount
 DELETE FROM PARTICIPATED WHERE damage_amt < (SELECT AVG(damage_amt) FROM PARTICIPATED);
 SELECT * FROM PARTICIPATED WHERE damage_amt < (SELECT AVG(damage_amt) FROM PARTICIPATED);
 

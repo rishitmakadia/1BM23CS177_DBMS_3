@@ -9,7 +9,6 @@ insert into Branch values ('SBI_Chamrajpet', 'Bangalore', 50000),
 ('SBI_ParliamentRoad', 'Delhi', 10000), ('SBI_JantarMantar', 'Delhi', 20000);
 select * from Branch;
 
-
 create table BankAcc(AccNo int(2),BranchName varchar(25), Balance int(5), 
 PRIMARY KEY (AccNo), 
 FOREIGN KEY (BranchName) REFERENCES Branch(BranchName));
@@ -80,5 +79,3 @@ SELECT * FROM BankAcc WHERE BranchName IN (SELECT BranchName FROM Branch WHERE B
 -- Update the Balance of all accounts by 5% ?
 UPDATE BankAcc SET Balance = Balance * 1.05;
 SELECT * FROM BankAcc;
-
-
